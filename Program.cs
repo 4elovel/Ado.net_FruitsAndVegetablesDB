@@ -19,18 +19,21 @@ internal class Program
             Console.WriteLine("Conection is successful\n");
             CreateTable(connection);
 
-            //CreateOBJ(connection,"banan","fruit","yellow","120");
-            //CreateOBJ(connection, "carrot", "vegetable", "orange", "70");
+            CreateOBJ(connection,"banan","fruit","yellow","120");
+            CreateOBJ(connection, "carrot", "vegetable", "orange", "70");
+            CreateOBJ(connection, "apple", "fruit", "red", "100");
+            CreateOBJ(connection, "pear", "fruit", "green", "80");
+
             Console.WriteLine("Відображення всієї інформації з таблиці овочів і фруктів.");
             SelAll(connection);
             Console.WriteLine();
             Console.WriteLine("Відображення усіх назв овочів і фруктів.");
             SelNames(connection);
             Console.WriteLine();
-            Console.WriteLine(" Відображення усіх кольорів.");
+            Console.WriteLine("Відображення усіх кольорів.");
             SelColors(connection);
             Console.WriteLine();
-            Console.WriteLine(" Показати максимальну калорійність.");
+            Console.WriteLine("Показати максимальну калорійність.");
             SelMax(connection);
             Console.WriteLine();
             Console.WriteLine("Показати мінімальну калорійність.");
@@ -57,7 +60,7 @@ internal class Program
             Console.WriteLine("Показати овочі та фрукти з калорійністю вище вказаної.");
             SelCalAbove(connection, 90);
             Console.WriteLine();
-            Console.WriteLine("Показати овочі та фрукти з калорійністю у вказаному діапазоні.\r");
+            Console.WriteLine("Показати овочі та фрукти з калорійністю у вказаному діапазоні.");
             SelCalBetween(connection, 70, 100);
             Console.WriteLine();
             Console.WriteLine("Показати усі овочі та фрукти жовтого або червоного кольору.");
